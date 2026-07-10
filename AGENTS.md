@@ -12,6 +12,8 @@ Prefer using that skill over ad hoc rewriting when the request matches.
 
 This repository is a writing workspace.
 
+When you finish writing or editing files, run `bash build-in-docker.sh` to generate the PDF.
+
 When touching writing-related files, use `.codex/skills/humanizer-ja/SKILL.md` as part of the editing workflow so Japanese prose stays natural and does not read like AI-generated text.
 
 Writing-related files in this workspace:
