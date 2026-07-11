@@ -1,10 +1,13 @@
 import board
 import digitalio
 import usb_hid
+
 # from adafruit_debouncer import Debouncer
 from debouncer import Debouncer
+
 # from adafruit_hid.keyboard import Keyboard
 from keyboard import Keyboard
+
 # from adafruit_hid.keycode import Keycode
 from keycode import Keycode
 
