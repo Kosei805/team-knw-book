@@ -1,6 +1,7 @@
 PREDEF:
   - preface.re
-
+  # はじめに
+  # bone_prefare.md
 CHAPS:
   - article.re
 
