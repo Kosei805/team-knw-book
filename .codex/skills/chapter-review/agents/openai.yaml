@@ -1,0 +1,4 @@
+interface:
+  display_name: "Chapter Review"
+  short_description: "Review technical book chapters through why-what-how structure"
+  default_prompt: "Review this technical book chapter for why-what-how flow, reader empathy, theory, implementation clarity, and concrete revision priorities."
