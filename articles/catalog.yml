@@ -1,12 +1,12 @@
 PREDEF:
   - preface.re
-  # はじめに
+  # はじめに: 今ハードウェアの知識を求める理由
   # bone_preface.md
 
 CHAPS:
-  # 第1章: なぜキーボードの仕組みを深掘りするか
-  # bone: chaps/bone_ch01_why_keyboard.md
-  - chaps/ch01_why_keyboard.re
+  # 第1章: 本書でこれから何を作るのか
+  # bone: chaps/bone_ch01_what_will_do.md
+  - chaps/ch01_what_will_do.re
   # 第2章: 環境構築
   # bone: chaps/bone_ch02_environment_setup.md
   - chaps/ch02_environment_setup.re
