@@ -16,6 +16,8 @@ When you finish writing or editing files, run `bash build-in-docker.sh` to gener
 
 When touching writing-related files, use `.codex/skills/humanizer-ja/SKILL.md` as part of the editing workflow so Japanese prose stays natural and does not read like AI-generated text.
 
+When writing technical book content, also use `.codex/skills/content-first-writing/SKILL.md` so the chapter is shaped by user input before any prose is drafted.
+
 Writing-related files in this workspace:
 
 - `articles/catalog.yml`: Table of contents order for the book. Use this to determine which `.re` file corresponds to each section, and add new chapter filenames here when creating additional chapters.
