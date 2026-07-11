@@ -1,7 +1,7 @@
 PREDEF:
   - preface.re
   # はじめに
-  # bone_prefare.md
+  # bone_preface.md
 
 CHAPS:
   # 第1章: なぜキーボードの仕組みを深掘りするか
