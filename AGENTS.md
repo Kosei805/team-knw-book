@@ -12,7 +12,9 @@ Prefer using that skill over ad hoc rewriting when the request matches.
 
 This repository is a writing workspace.
 
-When you finish writing or editing files, run `bash build-in-docker.sh` to generate the PDF.
+When you finish writing or editing the book content itself, run `bash build-in-docker.sh` to generate the PDF.
+Book content means the manuscript and book configuration files under `articles/` that affect the rendered book, such as `articles/*.re`, `articles/catalog.yml`, and `articles/config.yml`.
+Do not run the build for edits that only touch workspace docs, agent instructions, or other non-book notes.
 
 When touching writing-related files, use `.codex/skills/humanizer-ja/SKILL.md` as part of the editing workflow so Japanese prose stays natural and does not read like AI-generated text.
 
