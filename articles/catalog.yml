@@ -2,8 +2,23 @@ PREDEF:
   - preface.re
   # はじめに
   # bone_prefare.md
+
 CHAPS:
-  - article.re
+  # 第1章: なぜキーボードの仕組みを深掘りするか
+  # bone: chaps/bone_ch01_why_keyboard.md
+  - chaps/ch01_why_keyboard.re
+  # 第2章: 環境構築
+  # bone: chaps/bone_ch02_environment_setup.md
+  - chaps/ch02_environment_setup.re
+  # 第3章: キー1個のキーボードを作る (MUST)
+  # bone: chaps/bone_ch03_one_key_keyboard.md
+  - chaps/ch03_one_key_keyboard.re
+  # 第4章: ピンを節約する仕組み (FLEX)
+  # bone: chaps/bone_ch04_matrix_and_diodes.md
+  - chaps/ch04_matrix_and_diodes.re
+  # あとがき
+  # bone: chaps/bone_afterword.md
+  - chaps/afterword.re
 
 APPENDIX:
 
