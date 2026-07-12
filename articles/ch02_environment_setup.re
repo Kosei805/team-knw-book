@@ -102,3 +102,19 @@ lib
 //}
 
 このような構成になっていれば、ライブラリのコピーは完了です。
+
+== 2.4：開発エディタ「Thonny」を準備する
+
+ライブラリまでそろえても、コードを書いて Pico H に送る道具がまだありません。
+本書では、そのためのエディタに Thonny を使います。
+Thonny は Python 専用のエディタで、 CircuitPython を書き込んだボードをシリアル接続で認識する機能を標準で備えています。
+
+ * Thonny の公式サイト（https://thonny.org/）からインストーラーをダウンロードする
+ * インストーラーの手順に従ってインストールする
+ * USB ケーブルで Pico H と PC を接続する
+ * Thonny を起動し、右下のインタープリタ選択メニューから「CircuitPython (generic)」を選ぶ
+
+//image[thonny-interpreter][Thonny の画面右下のインタープリタ選択メニュー]
+
+インタープリタを選ぶと、画面下部の Shell エリアに「Adafruit CircuitPython ...」という表示が出ます。
+この表示が出ていれば、 Thonny と Pico H の接続は完了です。
