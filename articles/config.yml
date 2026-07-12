@@ -27,7 +27,7 @@ language: ja
 booktitle: {name: "3000円で始めるキーボード第一歩", file-as: "サンゼンエンデハジメルキーボードダイイッポ"}
 
 # 著者名。「, 」で区切って複数指定できる
-aut: [{name: "KNW(Keyboard Nanmo Wakaran)", file-as: "KNW(Keyboard Nanmo Wakaran)"}]
+aut: [{name: "KNW(キーボードなにもわからない)", file-as: "KNW(キーボードなにもわからない)"}]
 
 # 以下はオプション
 # 以下はオプション(autと同じように配列書式で複数指定可能)。
