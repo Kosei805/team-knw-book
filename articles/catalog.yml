@@ -16,11 +16,11 @@ CHAPS:
   # 第4章: ピンを節約する仕組み (FLEX)
   # bone: chaps/bone_ch04_matrix_and_diodes.md
   - ch04_matrix_and_diodes.re
-  # あとがき
-  # bone: chaps/bone_afterword.md
-  - afterword.re
 
 APPENDIX:
 
 POSTDEF:
+  # あとがき
+  # bone: chaps/bone_afterword.md
+  - afterword.re
   - contributors.re
