@@ -9,16 +9,16 @@
 //image[required-parts][今回使用する電子部品一覧]
 
 #@# TODO: 各パーツについて、この商品・型番を選んだ論理的な理由（他の選択肢との違いなど）を書く
- * Raspberry Pi Pico H × 1基
+ * Raspberry Pi Pico H × 1個
  ** 購入先： Switch Science （https://www.switch-science.com/products/8170）
  * ブレッドボード × 2枚
  ** 購入先： Amazon （https://amzn.asia/d/01QLKXpi）
  * タクトスイッチ × 4個
  ** 購入先：秋月電子通商（https://akizukidenshi.com/catalog/g/g103647/）
- * スイッチングダイオード（1N4148）×4本（予備含め50本パックがおすすめ）
+ * スイッチングダイオード（1N4148）× 4本（予備含め50本パックがおすすめ）
  ** 購入先：秋月電子通商（https://akizukidenshi.com/catalog/g/g100941/）
  * ジャンパーワイヤー（オス-オス）× 最低8本（本書内では以下の120本混合パックを使用）
- ** 購入先リンク： Amazon （https://amzn.asia/d/0gWP8NfT）
+ ** 購入先： Amazon （https://amzn.asia/d/0gWP8NfT）
 
 ダイオードとジャンパーワイヤーは、必要な本数ぴったりより多めのパックがおすすめです。
 はんだ付けの失敗や紛失で、作業中に本数が減ることがあるためです。
