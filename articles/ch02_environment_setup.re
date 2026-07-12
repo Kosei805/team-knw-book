@@ -57,3 +57,48 @@ STABLE（安定版）の 10.x 系のバージョンにある「DOWNLOAD .UF2 NOW
 USB ケーブルの中には、充電専用でデータ通信に対応していないものがあります。
 このケーブルだと、 BOOTSEL ボタンを押しながら接続しても「RPI-RP2」ドライブが表示されません。
 ドライブが表示されないときは、まずケーブルをデータ通信対応のものに替えてみてください。
+
+== 2.3：必要なライブラリをコピーする
+
+CircuitPython を書き込んだだけでは、 Pico H はまだキーボードとして動く準備ができていません。
+adafruit_hid のような、ハードウェア固有の機能を扱うライブラリは標準では含まれておらず、自分で追加する必要があります。
+ここでは、キーボードを作るのに必要なライブラリを CIRCUITPY ドライブにコピーする手順を説明します。
+
+追加するライブラリは次の3つです。
+
+ * adafruit_hid （ディレクトリ）：Pico H を USB 経由でキーボードとして PC に認識させ、キー入力を送るためのライブラリ
+ * adafruit_debouncer.mpy：タクトスイッチのチャタリング（一瞬のオン・オフの揺れ）を吸収するためのライブラリ
+ * adafruit_ticks.mpy：adafruit_debouncer が内部で使う、時間を計るためのライブラリ
+
+ライブラリは、 circuitpython.org のライブラリバンドル配布ページ（https://circuitpython.org/libraries）からまとめて入手します。
+バンドルは CircuitPython のバージョンごとに分かれているため、2.2 でインストールした 10.x 系に対応するバンドルをダウンロードしてください。
+バージョンが一致していないと、ライブラリが正しく読み込めないことがあります。
+ダウンロードする zip ファイルの名前は「adafruit-circuitpython-bundle-10.x-mpy-<日付>.zip」のように、末尾の日付部分がリリースのたびに変わります。
+展開すると、同じ名前のディレクトリの中に lib ディレクトリがあり、その中に数百個のライブラリが並んでいます。
+この中から、必要な3つだけを探して使います。
+
+ * circuitpython.org のライブラリバンドル配布ページを開く
+ * 10.x 系に対応したバンドルの zip ファイルをダウンロードする
+ * ダウンロードした zip ファイルを展開する
+ * 展開したディレクトリの中の lib ディレクトリから、 adafruit_hid ディレクトリ、 adafruit_debouncer.mpy 、 adafruit_ticks.mpy を探す
+ * CIRCUITPY ドライブの直下に lib ディレクトリがなければ作成する
+ * 探した3つのファイル（ディレクトリ）を CIRCUITPY ドライブの lib ディレクトリにコピーする
+
+コピーが終わると、 lib ディレクトリの中身は次のようになります。
+
+//list[lib_folder_structure][CIRCUITPY/lib ディレクトリの中身]{
+lib
+├── adafruit_debouncer.mpy
+├── adafruit_hid
+│   ├── __init__.mpy
+│   ├── consumer_control_code.mpy
+│   ├── consumer_control.mpy
+│   ├── keyboard_layout_base.mpy
+│   ├── keyboard_layout_us.mpy
+│   ├── keyboard.mpy
+│   ├── keycode.mpy
+│   └── mouse.mpy
+└── adafruit_ticks.mpy
+//}
+
+このような構成になっていれば、ライブラリのコピーは完了です。
