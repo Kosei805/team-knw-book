@@ -307,7 +307,7 @@ Aキーを1回入力するには、Aの番号を一度送れば終わり、で�
 
 //emlist[][python]{
 for device in devices:
-    if getattr(device, "usage_page", None) == 0x01 and \\
+    if getattr(device, "usage_page", None) == 0x01 and \
        getattr(device, "usage", None) == 0x06:
         self._device = device
         break
@@ -356,7 +356,7 @@ def _sync(self):
     self._report[0] = self._modifiers
     self._report[1] = 0
     for index in range(6):
-        self._report[2 + index] = \\
+        self._report[2 + index] = \
             self._keys[index] if index < len(self._keys) else 0
     self._device.send_report(self._report)
 //}
